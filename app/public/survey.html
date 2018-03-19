@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Friend-Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div>
+      <div class = "container">
+
+        <div class="jumbotron">
+          <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="name">What's Your Name?</label>
+            <input type="text" class="user-info" id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Please link to your Profile Picture</label>
+            <input type="text" class="user-info" id="image">
+        </div>
+
+        <div>
+          <h3><strong>Question 1</strong></h3>
+          <h4>I need to spend at least an hour outside every day.</h4>
+          <select class="answer-selection" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 2</strong></h3>
+          <h4>I'd rather eat in than go out for dinner.</h4>
+          <select class="answer-selection" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 3</strong></h3>
+          <h4>If I go out, don't make me wear fancy clothes.  I like to be casual.</h4>
+          <select class="answer-selection" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 4</strong></h3>
+          <h4>I need at least 8 hours of sleep or I'm a wreak.</h4>
+          <select class="answer-selection" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 5</strong></h3>
+          <h4>Dinner for two is better than dinner for 10.</h4>
+          <select class="answer-selection" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>  
+
+        <br>      
+
+        <div>
+          <h3><strong>Question 6</strong></h3>
+          <h4>I love dogs.</h4>
+          <select class="answer-selection" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 7</strong></h3>
+          <h4>A stay-cation is the best kind of vacation.</h4>
+          <select class="answer-selection" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 8</strong></h3>
+          <h4>I'd rather meet new people than hang out with the same people every day.</h4>
+          <select class="answer-selection" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 9</strong></h3>
+          <h4>If winter lasts beyond February, I get cabin feaver.</h4>
+          <select class="answer-selection" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+        <br>
+
+        <div>
+          <h3><strong>Question 10</strong></h3>
+          <h4>I think surveys are a waste of time.</h4>
+          <select class="answer-selection" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+      </div>
+
+    <br>
+    <br>
+
+
+          <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+     Submit</button>
+
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/app/data/friends">API Friends List</a> | <a href="/home">Home</a></p>
+      </div>
+    </footer>
+
+  <!-- Modal -->
+  <div id="results" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="friendName"></h2>
+          <img id="friendImage" src="#" alt="Profile Pic">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript">
+
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
+      
+//call checkForms to make sure that all fields are completed, if so
+    if (checkForms() == true) {
+
+
+//build object that contains user info and answers (in an array)
+      var newAnswers = {
+        Name: $("#name").val().trim(),
+        Image: $("#image").val().trim(),
+        Answers: [
+        $("#q1").val().trim(),
+        $("#q2").val().trim(),
+        $("#q3").val().trim(),
+        $("#q4").val().trim(),
+        $("#q5").val().trim(),
+        $("#q6").val().trim(),
+        $("#q7").val().trim(),
+        $("#q8").val().trim(),
+        $("#q9").val().trim(),
+        $("#q10").val().trim()
+        ]
+      };
+
+//send object to friends route to process and find match
+      $.post("/app/data/friends", newAnswers, function(data) {
+        $("#friendName").text(data.Name);
+        $("#friendImage").attr("src", data.Image);
+
+        $("#results").modal('toggle');
+
+// Clear the form when submitting
+        $(".user-info").each(function() {
+          $(this).val("");
+        });
+
+        $(".answer-selection").each(function() {
+          $(this).val("");
+        });
+
+      });
+
+// If we detect an empty field
+
+    } else {
+      alert (" Please check to make sure you fill in all of the forms!");
+    }
+
+  });
+
+
+// Validates that all fields are complete
+
+function checkForms () {
+  var complete = true;
+
+  $(".user-info").each(function() {
+    if ($(this).val() == "") {
+      complete = false;
+    }
+  });
+
+  $(".answer-selection").each(function() {
+    if ($(this).val() == "") {
+      complete = false;
+    }
+  });
+
+  return complete;
+};
+
+
+  </script>
+  </body>
+</html>
+
